@@ -5,7 +5,7 @@ import HeroGreeting from "@/components/HeroGreeting";
 const facts = [
   { icon: "🌞", title: "熱帶之王", text: "芒果原產於南亞，喜歡溫暖陽光，台灣的產季集中在 5 到 8 月。" },
   { icon: "💪", title: "營養豐富", text: "富含維生素 A、C 與膳食纖維，香甜又有飽足感。" },
-  { icon: "🍋", title: "品種多樣", text: "愛文、金煌、土芒果……每一種都有獨特的香氣與口感，讓你一吃就愛上。" },
+  { icon: "🍋", title: "品種多樣", text: "愛文、金煌、土芒果……每一種都有獨特的香氣與口感。" },
 ];
 
 const ways = [
@@ -179,8 +179,9 @@ export default function Home() {
               <div
                 key={photo.src}
                 // On phones the first photo spans both columns so the 5 photos fill the grid evenly
-                className={`relative overflow-hidden rounded-xl shadow ${i === 0 ? "col-span-2 aspect-[2/1] md:col-span-1 md:aspect-square" : "aspect-square"
-                  }`}
+                className={`relative overflow-hidden rounded-xl shadow ${
+                  i === 0 ? "col-span-2 aspect-[2/1] md:col-span-1 md:aspect-square" : "aspect-square"
+                }`}
               >
                 <Image
                   src={photo.src}
